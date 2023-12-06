@@ -17,6 +17,7 @@ const server = app.listen(PORT, () => {
 })
 
 
+
 process.on('SIGTERM', () => {
 	console.info('SIGTERM signal received.');
 	server.close(() => {
